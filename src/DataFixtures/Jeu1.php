@@ -40,17 +40,41 @@ class Jeu1 extends Fixture
 
         $categorie6 = new Categorie();
         $categorie6->setLibelle("Salade");
+        $categorie6->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/category/salade_cat.jpg');
+        $categorie6->setActive(1);
+
         
         $categorie7 = new Categorie();
         $categorie7->setLibelle("Veggie");
+        $categorie7->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/category/veggie_cat.jpg');
+        $categorie7->setActive(1);
+
+
 
         $categorie8 = new Categorie();
         $categorie8->setLibelle("Wrap");
+        $categorie8->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/category/wrap_cat.jpg');
+        $categorie8->setActive(1);
 
         $plat1 = new Plat();
         $plat1->setLibelle("Wrap");
         $plat1->setDescription("Wrap au poulet");
         $plat1->setPrix("15.10");
+        $plat1->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/food/buffalo-chicken.webp');
+        $plat1->setActive(1);
+        $plat1->setCategorie($categorie8);
+
+        $plat2 = new Plat();
+        $plat1->setLibelle("Salade");
+        $plat1->setDescription("Wrap au poulet");
+        $plat1->setPrix("15.10");
+        $plat1->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/food/buffalo-chicken.webp');
+        $plat1->setActive(1);
+        $plat1->setCategorie($categorie8);
+
+
+
+
 
 
 
