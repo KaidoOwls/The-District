@@ -145,6 +145,56 @@ class Jeu1 extends Fixture
         $plat10->setActive(1);
         $plat10->setCategorie($categorie7);
 
+        $plat11= new Plat();
+        $plat11->setLibelle("Veggie");
+        $plat11->setDescription("Pain fromage");
+        $plat11->setPrix("10.00");
+        $plat11->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/food/Food-Name-3631.jpg');
+        $plat11->setActive(1);
+        $plat11->setCategorie($categorie7);
+
+        $plat12= new Plat();
+        $plat12->setLibelle("Pizza");
+        $plat12->setDescription("Pizza Margherita");
+        $plat12->setPrix("25.00");
+        $plat12->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/food/pizza-margherita.jpg');
+        $plat12->setActive(1);
+        $plat12->setCategorie($categorie3);
+
+        $plat13= new Plat();
+        $plat13->setLibelle("Pizza");
+        $plat13->setDescription("Pizza Saumon");
+        $plat13->setPrix("10.00");
+        $plat13->setImage('assets/images/images_the_district/food/pizza-salmon.png');
+        $plat13->setActive(1);
+        $plat13->setCategorie($categorie3);
+
+        $plat14 = new Plat();
+        $plat14->setLibelle("Salade");
+        $plat14->setDescription("Salade discount");
+        $plat14->setPrix("05.00");
+        $plat14->setImage('assets/images/images_the_district/food/salad1.png');
+        $plat14->setActive(1);
+        $plat14->setCategorie($categorie6);
+
+        $plat15= new Plat();
+        $plat15->setLibelle("Veggie");
+        $plat15->setDescription("Spaghetti Legumes");
+        $plat15->setPrix("30.00");
+        $plat15->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/food/spaghetti-legumes.jpg');
+        $plat15->setActive(1);
+        $plat15->setCategorie($categorie7);
+
+
+        $plat16= new Plat();
+        $plat16->setLibelle("Veggie");
+        $plat16->setDescription("Tagliatelles saumon");
+        $plat16->setPrix("20.00");
+        $plat16->setImage('assets/images/images_the_district/food/tagliatelles-saumon.webp');
+        $plat16->setActive(1);
+        $plat16->setCategorie($categorie7);
+
+
 
 
 
