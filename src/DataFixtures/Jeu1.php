@@ -4,6 +4,7 @@ namespace App\DataFixtures;
 
 use App\Entity\Categorie;
 use App\Entity\Plat;
+use App\Entity\Utilisateur;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
@@ -55,6 +56,23 @@ class Jeu1 extends Fixture
         $categorie8->setLibelle("Wrap");
         $categorie8->setImage('wrap_cat.jpg');
         $categorie8->setActive(1);
+
+
+
+
+
+
+        $manager->persist($categorie1);
+        $manager->persist($categorie2);
+        $manager->persist($categorie3);
+        $manager->persist($categorie4);
+        $manager->persist($categorie5);
+        $manager->persist($categorie6);
+        $manager->persist($categorie7);
+        $manager->persist($categorie8);
+
+
+
 
         $plat1 = new Plat();
         $plat1->setLibelle("Wrap");
@@ -196,15 +214,6 @@ class Jeu1 extends Fixture
         $plat16->setCategorie($categorie7);
 
 
-        
-        $manager->persist($categorie1);
-        $manager->persist($categorie2);
-        $manager->persist($categorie3);
-        $manager->persist($categorie4);
-        $manager->persist($categorie5);
-        $manager->persist($categorie6);
-        $manager->persist($categorie7);
-        $manager->persist($categorie8);
 
 
 
@@ -224,6 +233,50 @@ class Jeu1 extends Fixture
         $manager->persist($plat14);
         $manager->persist($plat15);
         $manager->persist($plat16);
+
+
+
+
+        $user1= new Utilisateur();
+        $user1->setEmail("Zkr@hotmail.fr");
+        $user1->setPassword("0000");
+        $user1->setNom("Teurki");
+        $user1->setPrenom("Zak");
+        $user1->setTelephone("0752318978");
+        $user1->setAdresse("9 rue de doullens");
+        $user1->setCp("80000");
+        $user1->setVille("Doullens");
+
+
+        $user2= new Utilisateur();
+        $user2->setEmail("Diouf@hotmail.fr");
+        $user2->setPassword("0000");
+        $user2->setNom("Diouf");
+        $user2->setPrenom("Geoffrey");
+        $user2->setTelephone("0752418978");
+        $user2->setAdresse("9 rue de allone");
+        $user2->setCp("60000");
+        $user2->setVille("Beauvais");
+
+        $user3= new Utilisateur();
+        $user3->setEmail("Malek@hotmail.fr");
+        $user3->setPassword("0000");
+        $user3->setNom("Malek");
+        $user3->setPrenom("Julien");
+        $user3->setTelephone("0752318979");
+        $user3->setAdresse("9 rue de clignancourt");
+        $user3->setCp("80000");
+        $user3->setVille("Amiens");
+
+
+        $manager->persist($user1);
+        $manager->persist($user2);
+        $manager->persist($user3);
+        
+
+
+
+
 
 
 
