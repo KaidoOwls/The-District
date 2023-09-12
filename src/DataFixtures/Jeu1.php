@@ -63,6 +63,7 @@ class Jeu1 extends Fixture
         $plat1->setImage('/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/food/buffalo-chicken.webp');
         $plat1->setActive(1);
         $plat1->setCategorie($categorie8);
+       
 
         $plat2 = new Plat();
         $plat2->setLibelle("Salade");
