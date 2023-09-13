@@ -4,6 +4,7 @@ namespace App\DataFixtures;
 
 use App\Entity\Admin;
 use App\Entity\Categorie;
+use App\Entity\Commande;
 use App\Entity\Plat;
 use App\Entity\Utilisateur;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -288,6 +289,8 @@ class Jeu1 extends Fixture
 
 
         $manager->persist($user4);
+
+       
 
 
 

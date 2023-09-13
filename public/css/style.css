@@ -1,0 +1,11 @@
+.barre{
+    margin-left:auto;
+    margin-right:auto;
+    width:400px;
+  }
+
+.image{
+    background-image: url("/home/kaido/Bureau/TheDistrict/assets/images/images_the_district/bg.jpg");
+    background-size: cover; /* ajustez cette propriété selon vos besoins */
+}
+  
