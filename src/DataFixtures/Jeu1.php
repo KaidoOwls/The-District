@@ -275,11 +275,19 @@ class Jeu1 extends Fixture
         $manager->persist($user3);
         
 
-        $admin = new Admin();
-        $admin->setEmail("seydina@thedistrict.com");
-        $admin->setPassword("0000");
+        $user4 = new Utilisateur();
+        $user4->setEmail("seydina@thedistrict.com")
+            ->setPassword("0000")
+            ->setNom("Diallo")
+            ->setPrenom("Seydina")
+            ->setTelephone("0745863201")
+            ->setAdresse("9 rue de dakar")
+            ->setCp("80000")
+            ->setVille("Amiens")
+            ->setRoles(['ROLE_ADMIN']);
 
-        $manager->persist($admin);
+
+        $manager->persist($user4);
 
 
 
