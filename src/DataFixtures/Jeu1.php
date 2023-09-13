@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Admin;
 use App\Entity\Categorie;
 use App\Entity\Plat;
 use App\Entity\Utilisateur;
@@ -274,7 +275,11 @@ class Jeu1 extends Fixture
         $manager->persist($user3);
         
 
+        $admin = new Admin();
+        $admin->setEmail("seydina@thedistrict.com");
+        $admin->setPassword("0000");
 
+        $manager->persist($admin);
 
 
 
